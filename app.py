@@ -18,7 +18,7 @@ local_folder = "./vector_index_2"
 if not os.path.exists(local_folder):
     os.makedirs(local_folder, exist_ok=True)
     gdown.download_folder(id=folder_id, output=local_folder, quiet=False)
-token = userdata.get('Otu_ocha')
+token = os.getenv('Otu_ocha')
 
                           
 # llm
