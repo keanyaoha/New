@@ -18,6 +18,9 @@ local_folder = "./vector_index_2"
 if not os.path.exists(local_folder):
     os.makedirs(local_folder, exist_ok=True)
     gdown.download_folder(id=folder_id, output=local_folder, quiet=False
+token = userdata.get('Otu_ocha')
+
+                          
 # llm
 hf_model = "mistralai/Mistral-7B-Instruct-v0.3"
 llm = HuggingFaceInferenceAPI(model_name=hf_model, task="text-generation", token=token)
