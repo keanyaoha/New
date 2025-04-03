@@ -11,9 +11,10 @@ import gdown
 
 # Load API token (use environment variable for compatibility)
 token = userdata.get("Otu_ocha")
-
-# Google Drive Folder ID
-folder_id = "1ykKlRQH7wXBl9P1YHAOVUfcfVs0PpNRs"
+# folder_id  = "https://raw.githubusercontent.com/keanyaoha/New/main/vector_index_2"
+git add vector_index_2/
+git commit -m "Added vector index"
+git push origin main
 
 # Define local path
 local_folder = "./vector_index_2"
