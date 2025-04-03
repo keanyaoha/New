@@ -9,7 +9,7 @@ from llama_index.core.memory import ChatMemoryBuffer
 from llama_index.core.base.llms.types import ChatMessage, MessageRole
 
 # Load API token (use environment variable for compatibility)
-token = os.getenv("Otu_ocha")
+token = userdata.get("Otu_ocha")
 
 # llm
 hf_model = "mistralai/Mistral-7B-Instruct-v0.3"
