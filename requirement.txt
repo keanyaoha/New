@@ -3,3 +3,5 @@ pandas
 matplotlib
 llama-index
 transformers
+gdown
+huggingface-hub
