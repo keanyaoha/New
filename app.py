@@ -13,7 +13,7 @@ import gdown
 folder_id = "1ykKlRQH7wXBl9P1YHAOVUfcfVs0PpNRs"  # Your folder ID
 
 # Define the local folder path where the vector index will be stored
-local_folder = "./vector_index"
+local_folder = "./vector_index_2"
 # Download the folder from Google Drive if it doesn't exist locally
 if not os.path.exists(local_folder):
     os.makedirs(local_folder, exist_ok=True)
