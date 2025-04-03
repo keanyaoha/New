@@ -1,6 +1,7 @@
 import streamlit as st
 import os
 from llama_index.llms.huggingface import HuggingFaceInferenceAPI
+from llama_index.llms.huggingface_api import HuggingFaceInferenceAPI
 from llama_index.embeddings.huggingface import HuggingFaceEmbedding
 from llama_index.core import StorageContext, load_index_from_storage
 from llama_index.core.chat_engine import ContextChatEngine
@@ -8,7 +9,7 @@ from llama_index.core.memory import ChatMemoryBuffer
 from llama_index.core.base.llms.types import ChatMessage, MessageRole
 
 # Load API token (use environment variable for compatibility)
-token = os.getenv("HF_API_TOKEN")
+token = os.getenv("Otu_ocha")
 
 # llm
 hf_model = "mistralai/Mistral-7B-Instruct-v0.3"
