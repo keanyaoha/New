@@ -9,15 +9,15 @@ from llama_index.core.memory import ChatMemoryBuffer
 from llama_index.core.base.llms.types import ChatMessage, MessageRole
 import gdown
 
-# Load API token (use environment variable for compatibility)
-token = userdata.get("Otu_ocha")
-# folder_id  = "https://raw.githubusercontent.com/keanyaoha/New/main/vector_index_2"
-git add vector_index_2/
-git commit -m "Added vector index"
-git push origin main
+# Google Drive Folder ID
+folder_id = "1ykKlRQH7wXBl9P1YHAOVUfcfVs0PpNRs"  # Your folder ID
 
-# Define local path
-local_folder = "./vector_index_2"
+# Define the local folder path where the vector index will be stored
+local_folder = "./vector_index"
+# Download the folder from Google Drive if it doesn't exist locally
+if not os.path.exists(local_folder):
+    os.makedirs(local_folder, exist_ok=True)
+    gdown.download_folder(id=folder_id, output=local_folder, quiet=False
 # llm
 hf_model = "mistralai/Mistral-7B-Instruct-v0.3"
 llm = HuggingFaceInferenceAPI(model_name=hf_model, task="text-generation", token=token)
