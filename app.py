@@ -1,16 +1,3 @@
-
-import streamlit as st
-import os
-from llama_index.llms.huggingface import HuggingFaceInferenceAPI
-from llama_index.llms.huggingface_api import HuggingFaceInferenceAPI
-from llama_index.embeddings.huggingface import HuggingFaceEmbedding
-from llama_index.core import StorageContext, load_index_from_storage
-from llama_index.core.chat_engine import ContextChatEngine
-from llama_index.core.memory import ChatMemoryBuffer
-from llama_index.core.base.llms.types import ChatMessage, MessageRole
-import gdown
-from google.colab import userdata
-
 # download saved vector database for Alice's Adventures in Wonderland
 gdown --folder 1ykKlRQH7wXBl9P1YHAOVUfcfVs0PpNRs
 token = userdata.get('Otu_ocha')
