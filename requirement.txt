@@ -1,6 +1,12 @@
 streamlit
 pandas
 matplotlib
+%%bash
+pip install -qqq -U llama-index-core
+pip install -qqq llama-index-llms-huggingface-api
+pip install -qqq llama-index-readers-file
+pip install -qqq llama-index-embeddings-huggingface
+
 llama-index
 transformers
 gdown
